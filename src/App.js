@@ -11,8 +11,8 @@ import CounterUsingUseEffect from "./components/UseEffectComponent/CounterUsingU
 function App() {
   return (
     <div className="App">
-      <CounterUsingUseEffect />
-      {/* <ClassComponentUseEffect /> */}
+      {/* <CounterUsingUseEffect /> */}
+      <ClassComponentUseEffect />
       {/* <HookCounterWithArray /> */}
       {/* <HookCounterWithObject /> */}
       {/* <HookMultipuleCount /> */}

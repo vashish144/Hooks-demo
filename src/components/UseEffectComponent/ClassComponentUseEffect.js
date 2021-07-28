@@ -6,6 +6,7 @@ class ClassComponentUseEffect extends Component {
 
     this.state = {
       count: 0,
+      name: "",
     };
   }
   clickHandler = () => {
@@ -15,15 +16,22 @@ class ClassComponentUseEffect extends Component {
     console.log("fired componentDidMount");
     document.title = `Clicked ${this.state.count} time`;
   }
-  componentDidUpdate() {
-    console.log("fired componentDidUpdated");
-    document.title = `Clicked ${this.state.count} time`;
+  componentDidUpdate(prevState, prevProps) {
+    if (prevState.count === this.state.count) {
+      console.log("fired componentDidUpdated");
+      document.title = `Clicked ${this.state.count} time`;
+    }
   }
   render() {
-    console.log("fired render Method");
-    const { count } = this.state;
+    // console.log("fired render Method");
+    const { count, name } = this.state;
     return (
       <div>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => this.setState({ name: e.target.value })}
+        />
         <button onClick={this.clickHandler}>click {count} time</button>
       </div>
     );
