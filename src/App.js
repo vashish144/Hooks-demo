@@ -1,15 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./components/increment/Counter";
-import HookCounter from "./components/increment/HookCounter";
-import HookMultipuleCount from "./components/increment/HookMultipuleCount";
-import HookCounterWithObject from "./components/increment/HookCounterWithObject";
-import HookCounterWithArray from "./components/increment/HookCounterWithArray";
+import Counter from "./components/UseStateComponent/increment/Counter";
+import HookCounter from "./components/UseStateComponent/increment/HookCounter";
+import HookMultipuleCount from "./components/UseStateComponent/increment/HookMultipuleCount";
+import HookCounterWithObject from "./components/UseStateComponent/increment/HookCounterWithObject";
+import HookCounterWithArray from "./components/UseStateComponent/increment/HookCounterWithArray";
+import ClassComponentUseEffect from "./components/UseEffectComponent/ClassComponentUseEffect";
+import CounterUsingUseEffect from "./components/UseEffectComponent/CounterUsingUseEffect";
 
 function App() {
   return (
     <div className="App">
-      <HookCounterWithArray />
+      <CounterUsingUseEffect />
+      {/* <ClassComponentUseEffect /> */}
+      {/* <HookCounterWithArray /> */}
       {/* <HookCounterWithObject /> */}
       {/* <HookMultipuleCount /> */}
       {/* <HookCounter /> */}
