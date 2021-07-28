@@ -7,11 +7,15 @@ import HookCounterWithObject from "./components/UseStateComponent/increment/Hook
 import HookCounterWithArray from "./components/UseStateComponent/increment/HookCounterWithArray";
 import ClassComponentUseEffect from "./components/UseEffectComponent/ClassComponentUseEffect";
 import CounterUsingUseEffect from "./components/UseEffectComponent/CounterUsingUseEffect";
+import MouseCodinateClass from "./components/MouseRendring/MouseCodinateClass";
+import MouseRendringHook from "./components/MouseRendring/MouseRendringHook";
 
 function App() {
   return (
     <div className="App">
-      <CounterUsingUseEffect />
+    <MouseRendringHook/>
+      {/* <MouseCodinateClass /> */}
+      {/* <CounterUsingUseEffect /> */}
       {/* <ClassComponentUseEffect /> */}
       {/* <HookCounterWithArray /> */}
       {/* <HookCounterWithObject /> */}
