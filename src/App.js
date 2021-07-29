@@ -10,11 +10,17 @@ import CounterUsingUseEffect from "./components/UseEffectComponent/CounterUsingU
 import MouseCodinateClass from "./components/MouseRendring/MouseCodinateClass";
 import MouseRendringHook from "./components/MouseRendring/MouseRendringHook";
 import MouseContainer from "./components/MouseRendring/MouseContainer";
+import AutomaticCounter from "./components/AutoUpdateCounter/AutomaticCounter";
+import AutomaticCounterHook from "./components/AutoUpdateCounter/AutomaticCounterHook";
+import DataFetchingHook from "./components/DataFetching/DataFetchingHook";
 
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <DataFetchingHook />
+      {/* <AutomaticCounterHook />
+      <AutomaticCounter /> */}
+      {/* <MouseContainer /> */}
       {/* <MouseRendringHook/> */}
       {/* <MouseCodinateClass /> */}
       {/* <CounterUsingUseEffect /> */}
