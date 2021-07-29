@@ -13,7 +13,11 @@ function MouseRendringHook() {
   useEffect(() => {
     console.log("inside useEffect");
     window.addEventListener("mousemove", logMousePosition);
-  },[]);
+    return () => {
+      console.log("unmount windows listener");
+      window.removeEventListener("mousemove", logMousePosition);
+    };
+  }, []);
   return (
     <div>
       Hook: x-{x} y-{y}

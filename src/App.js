@@ -9,11 +9,13 @@ import ClassComponentUseEffect from "./components/UseEffectComponent/ClassCompon
 import CounterUsingUseEffect from "./components/UseEffectComponent/CounterUsingUseEffect";
 import MouseCodinateClass from "./components/MouseRendring/MouseCodinateClass";
 import MouseRendringHook from "./components/MouseRendring/MouseRendringHook";
+import MouseContainer from "./components/MouseRendring/MouseContainer";
 
 function App() {
   return (
     <div className="App">
-    <MouseRendringHook/>
+      <MouseContainer />
+      {/* <MouseRendringHook/> */}
       {/* <MouseCodinateClass /> */}
       {/* <CounterUsingUseEffect /> */}
       {/* <ClassComponentUseEffect /> */}
