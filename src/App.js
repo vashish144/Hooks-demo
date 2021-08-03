@@ -13,11 +13,13 @@ import MouseContainer from "./components/MouseRendring/MouseContainer";
 import AutomaticCounter from "./components/AutoUpdateCounter/AutomaticCounter";
 import AutomaticCounterHook from "./components/AutoUpdateCounter/AutomaticCounterHook";
 import DataFetchingHook from "./components/DataFetching/DataFetchingHook";
+import AppComponent from "./components/useContextComponent/AppComponent";
 
 function App() {
   return (
     <div className="App">
-      <DataFetchingHook />
+      <AppComponent />
+      {/* <DataFetchingHook /> */}
       {/* <AutomaticCounterHook />
       <AutomaticCounter /> */}
       {/* <MouseContainer /> */}
