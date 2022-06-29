@@ -14,11 +14,13 @@ import AutomaticCounter from "./components/AutoUpdateCounter/AutomaticCounter";
 import AutomaticCounterHook from "./components/AutoUpdateCounter/AutomaticCounterHook";
 import DataFetchingHook from "./components/DataFetching/DataFetchingHook";
 import AppComponent from "./components/useContextComponent/AppComponent";
+import UseReducerHomeComponent from "./components/UseReducerHook/UseReducerHomeComponent";
 
 function App() {
   return (
     <div className="App">
-      <AppComponent />
+      <UseReducerHomeComponent/>
+      {/* <AppComponent /> */}
       {/* <DataFetchingHook /> */}
       {/* <AutomaticCounterHook />
       <AutomaticCounter /> */}
