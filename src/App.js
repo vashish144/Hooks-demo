@@ -15,11 +15,13 @@ import AutomaticCounterHook from "./components/AutoUpdateCounter/AutomaticCounte
 import DataFetchingHook from "./components/DataFetching/DataFetchingHook";
 import AppComponent from "./components/useContextComponent/AppComponent";
 import UseReducerHomeComponent from "./components/UseReducerHook/UseReducerHomeComponent";
+import ParentComponent from "./components/UseCallbackHook/ParentComponent";
 
 function App() {
   return (
     <div className="App">
-      <UseReducerHomeComponent/>
+      <ParentComponent/>
+      {/* <UseReducerHomeComponent/> */}
       {/* <AppComponent /> */}
       {/* <DataFetchingHook /> */}
       {/* <AutomaticCounterHook />
