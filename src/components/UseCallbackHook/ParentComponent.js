@@ -28,3 +28,5 @@ const ParentComponent = () => {
 };
 
 export default ParentComponent;
+// use Callback cased the provided function instance itself
+// where as useMemo invoke the provided function and cased its result

@@ -16,11 +16,13 @@ import DataFetchingHook from "./components/DataFetching/DataFetchingHook";
 import AppComponent from "./components/useContextComponent/AppComponent";
 import UseReducerHomeComponent from "./components/UseReducerHook/UseReducerHomeComponent";
 import ParentComponent from "./components/UseCallbackHook/ParentComponent";
+import UseMemoParentComponent from "./components/UseMemoHook/UseMemoParentComponent";
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent/>
+      <UseMemoParentComponent/>
+      {/* <ParentComponent/> */}
       {/* <UseReducerHomeComponent/> */}
       {/* <AppComponent /> */}
       {/* <DataFetchingHook /> */}
