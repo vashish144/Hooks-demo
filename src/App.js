@@ -17,11 +17,13 @@ import AppComponent from "./components/useContextComponent/AppComponent";
 import UseReducerHomeComponent from "./components/UseReducerHook/UseReducerHomeComponent";
 import ParentComponent from "./components/UseCallbackHook/ParentComponent";
 import UseMemoParentComponent from "./components/UseMemoHook/UseMemoParentComponent";
+import OtherTutorialConsume from "./components/OtherTutorial/OtherTutorialConsume";
 
 function App() {
   return (
     <div className="App">
-      <UseMemoParentComponent/>
+      <OtherTutorialConsume/>
+      {/* <UseMemoParentComponent/> */}
       {/* <ParentComponent/> */}
       {/* <UseReducerHomeComponent/> */}
       {/* <AppComponent /> */}

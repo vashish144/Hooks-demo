@@ -10,10 +10,10 @@ const UseReducerHomeComponent = () => {
      {/* <FirstLesson/> */}
 
      {/* second Lesson */}
-     {/* <UseReducerWithContextHook/> */}
+     <UseReducerWithContextHook/>
    
    {/* Third Lesson */}
-   <ThirdLesson/>
+   {/* <ThirdLesson/> */}
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CountContext } from "./UseReducerWithContextHook";
 const ComponentA = () => {
   const countContext = useContext(CountContext);
+  console.log("countContext",countContext);
   return (
     <div>
       ComponentA-{countContext.countState}
