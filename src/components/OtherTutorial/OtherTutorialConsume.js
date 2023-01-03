@@ -3,6 +3,7 @@ import ContextTutorialConsume from "./ContextTutorial/ContextTutorialConsume";
 import FrowardCounsume from "./forwardRef/FrowardCounsume";
 import RefTutorial from "./RefTutorial";
 import UseLayoutEffectTutorial from "./UseLayoutEffectTutorial";
+import UseMemoHookTutorial from "./UseMemoHookTutorial";
 
 const OtherTutorialConsume = () => {
   return (
@@ -10,7 +11,8 @@ const OtherTutorialConsume = () => {
       {/* <RefTutorial /> */}
       {/* <UseLayoutEffectTutorial/> */}
       {/* <FrowardCounsume/> */}
-      <ContextTutorialConsume/>
+      {/* <ContextTutorialConsume/> */}
+      <UseMemoHookTutorial/>
     </>
   );
 };
